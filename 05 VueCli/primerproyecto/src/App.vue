@@ -21,12 +21,18 @@
       </div>
     </div>
 
-    <h3 class="title is-size-4">03. Tercer compoenente</h3>
+    <!--<h3 class="title is-size-4">03. Tercer compoenente</h3>
     <h4 class="subtitle is-size-5">Ejemplo mas avanzado</h4>
     <div class="box">
       <Currency culture="es-US" :amount="amount" />
       <Currency culture="es-US" :amount="amount" />
       <Currency culture="es-US" :amount="amount" />
+    </div>-->
+
+    <h3 class="title is-size-4">04. Shopping cart</h3>
+    <h4 class="subtitle is-size-5">Components hijos y padres</h4>
+    <div class="box">
+      <ShoppingCart></ShoppingCart>
     </div>
   </div>
 </template>
@@ -35,7 +41,8 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Timer from "./components/Timer";
 import Icon from "./components/Icon";
-import Currency from "./components/Currency";
+//import Currency from "./components/Currency";
+import ShoppingCart from "./components/ShopingCart";
 
 export default {
   name: "App",
@@ -50,7 +57,8 @@ export default {
     HelloWorld,
     Timer,
     Icon,
-    Currency,
+    //Currency,
+    ShoppingCart
   },
 };
 </script>
