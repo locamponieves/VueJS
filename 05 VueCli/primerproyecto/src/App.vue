@@ -34,6 +34,17 @@
     <div class="box">
       <ShoppingCart></ShoppingCart>
     </div>
+
+    <h3 class="title is-size-4">05. Page View component</h3>
+    <h4 class="subtitle is-size-5">Uso de slots</h4>
+    <div class="box">
+      <Page title="Soy una página con slot">
+        <p>Hola, soy una página</p>
+        <p>Hola mundo</p>
+        <p>Leonis Ocampo Nieves</p>
+        <p>Monto: {{amount}}</p>
+      </Page>
+    </div>
   </div>
 </template>
 
@@ -43,6 +54,7 @@ import Timer from "./components/Timer";
 import Icon from "./components/Icon";
 //import Currency from "./components/Currency";
 import ShoppingCart from "./components/ShopingCart";
+import Page from "./components/Page";
 
 export default {
   name: "App",
@@ -58,7 +70,8 @@ export default {
     Timer,
     Icon,
     //Currency,
-    ShoppingCart
+    ShoppingCart,
+    Page
   },
 };
 </script>
